@@ -263,7 +263,7 @@ if __name__ == "__main__":
         cm_train = calcular_matriz_confusion(modelo_ajustado, X_train, y_train, 'train')
         cm_test = calcular_matriz_confusion(modelo_ajustado, X_test, y_test, 'test')
 
-        print("Guardando métricas...")
+        print("Guardando metricas...")
         guardar_jsonl([metricas_train, metricas_test, cm_train, cm_test], 'files/output/metrics.json')
 
         print("Proceso listo.")
